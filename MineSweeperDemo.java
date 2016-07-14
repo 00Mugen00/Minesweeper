@@ -2,6 +2,7 @@ package prMineSweeper;
 
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -31,5 +32,7 @@ public class MineSweeperDemo {
 		window.pack();
 		window.setVisible(true); 
 		window.setResizable(false);
+		ImageIcon img = new ImageIcon("icon.png");
+		window.setIconImage(img.getImage());
 	}
 }

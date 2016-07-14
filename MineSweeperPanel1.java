@@ -144,4 +144,7 @@ public class MineSweeperPanel1 extends JPanel implements MineSweeperView {
 		return gameover;
 	}
 
+	public void printMessage(String msg){
+		message.setText(msg);
+	}
 }

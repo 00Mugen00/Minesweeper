@@ -51,4 +51,20 @@ public class MineSweeper {
 			}
 		}
 	}
+
+	public boolean gameFinished(){
+		int numberOfMines=0;
+		int numberClosedTiles=0;
+		for(int i=0; i<visibility.length;i++){
+			for(int j=0; j<visibility[0].length;j++){
+				if(cells[i][j]==9){
+					numberOfMines++;
+				}
+				if(!visibility[i][j]){
+					numberClosedTiles++;
+				}
+			}
+		}
+		return numberOfMines==numberClosedTiles;
+	}
 }

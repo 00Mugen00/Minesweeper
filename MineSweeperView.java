@@ -7,4 +7,5 @@ public interface MineSweeperView {
 	int getRow(int x);
 	int getColumn(int x);
 	boolean update(MineSweeper minesweeper);
+	void printMessage(String msg);
 }

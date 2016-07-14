@@ -24,5 +24,8 @@ public class MineSweeperCtr implements ActionListener {
 //		System.out.println("("+row+","+column+")");
 		minesweeper.openCell(row,column);
 		gameover = view.update(minesweeper);
+		if(minesweeper.gameFinished()){
+			view.printMessage("You won!");
+		}
 	}
 }
